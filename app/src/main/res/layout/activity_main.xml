@@ -8,13 +8,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:background="@color/fundo_branco"/>
+        android:background="@android:color/transparent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_below="@id/searchView"
+        android:layout_above="@id/copyrightText"
         android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/copyrightText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Copyright ©️ Enzo Mansi - 92955 | Gabriel Reis Baron - 93266"
+        android:textSize="12sp"
+        android:textColor="@color/texto_cinza"/>
 
 </RelativeLayout>
