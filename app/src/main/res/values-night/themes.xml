@@ -1,7 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.EnzoMansi_RM92955" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Theme.EcoDicas" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/verde_escuro</item>
+        <item name="colorPrimaryVariant">@color/verde_claro</item>
+        <item name="colorOnPrimary">@color/fundo_branco</item>
+        <item name="colorSecondary">@color/amarelo_sol</item>
+        <item name="colorSecondaryVariant">@color/azul_céu</item>
+        <item name="colorOnSecondary">@color/texto_preto</item>
+        <item name="backgroundColor">@color/fundo_branco</item>
+        <item name="colorSurface">@color/fundo_branco</item>
+        <item name="colorOnBackground">@color/texto_preto</item>
+        <item name="colorOnSurface">@color/texto_cinza</item>
     </style>
 </resources>
