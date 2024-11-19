@@ -7,6 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class DicaAdapter(private var dicas: List<Dica>, private val cliqueDica: (Dica) -> Unit) :
+
     RecyclerView.Adapter<DicaAdapter.DicaViewHolder>() {
 
     override fun onCreateViewHolder(pai: ViewGroup, tipo: Int): DicaViewHolder {
@@ -32,4 +33,5 @@ class DicaAdapter(private var dicas: List<Dica>, private val cliqueDica: (Dica) 
         val titulo: TextView = view.findViewById(R.id.titulo)
         val descricao: TextView = view.findViewById(R.id.descricao)
     }
+
 }

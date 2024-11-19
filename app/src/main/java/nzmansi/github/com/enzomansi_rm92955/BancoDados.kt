@@ -5,6 +5,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
 class BancoDados(contexto: Context) : SQLiteOpenHelper(contexto, "EcoDicas.db", null, 2) {
+
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL("CREATE TABLE Dicas (id INTEGER PRIMARY KEY, titulo TEXT, descricao TEXT)")
         db.execSQL("INSERT INTO Dicas (titulo, descricao) VALUES ('Desligue aparelhos que não estão em uso', 'Aparelhos eletrônicos consomem energia mesmo em modo de espera. Desconecte quando não for usar.')")
@@ -23,6 +24,7 @@ class BancoDados(contexto: Context) : SQLiteOpenHelper(contexto, "EcoDicas.db", 
     fun pegarDicas(): MutableList<Dica> {
         val dicas = mutableListOf<Dica>()
         val cursor = readableDatabase.rawQuery("SELECT * FROM Dicas", null)
+
         while (cursor.moveToNext()) {
             dicas.add(
                 Dica(
@@ -32,6 +34,7 @@ class BancoDados(contexto: Context) : SQLiteOpenHelper(contexto, "EcoDicas.db", 
                 )
             )
         }
+
         cursor.close()
         return dicas
     }

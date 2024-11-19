@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
+
     <color name="verde_claro">#A8D5BA</color>
     <color name="verde_escuro">#388E3C</color>
     <color name="amarelo_sol">#FFEB3B</color>
@@ -7,4 +9,5 @@
     <color name="fundo_branco">#FFFFFF</color>
     <color name="texto_preto">#212121</color>
     <color name="texto_cinza">#757575</color>
+
 </resources>

@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import nzmansi.github.com.enzomansi_rm92955.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     private lateinit var vinculo: ActivityMainBinding
     private lateinit var adaptador: DicaAdapter
     private lateinit var banco: BancoDados
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         vinculo.recyclerView.adapter = adaptador
 
         vinculo.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+
             override fun onQueryTextSubmit(texto: String?): Boolean {
                 texto?.let {
                     adaptador.atualizarDicas(dicas.filter { dica ->
@@ -46,6 +48,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 return true
             }
+
         })
+
     }
+
 }
